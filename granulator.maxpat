@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 208.0, 110.0, 1234.0, 467.0 ],
+		"rect" : [ 208.0, 85.0, 1138.0, 696.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -353,7 +353,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.0, 629.0, 189.0, 22.0 ],
 					"style" : "",
-					"text" : "read #0-breakingPoint.json 0"
+					"text" : "read #1-breakingPoint.json 0"
 				}
 
 			}
@@ -788,7 +788,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u508003758"
+					"varname" : "u285013742"
 				}
 
 			}
@@ -807,8 +807,8 @@
 					}
 ,
 					"style" : "",
-					"text" : "pattrstorage #0-breakingPoint.json @savemode 2",
-					"varname" : "#0-breakingPoint.json"
+					"text" : "pattrstorage #1-breakingPoint.json @savemode 2",
+					"varname" : "#1-breakingPoint.json"
 				}
 
 			}
@@ -834,7 +834,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 299.75, 122.0, 139.0, 22.0 ],
 					"style" : "",
-					"text" : "r #0-grainBufferDuration"
+					"text" : "r #1-grainBufferDuration"
 				}
 
 			}
@@ -1469,7 +1469,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 693.0, 287.0, 190.0, 22.0 ],
 					"style" : "",
-					"text" : "buffer~ #0-grainEnv @samps 512"
+					"text" : "buffer~ #1-grainEnv @samps 512"
 				}
 
 			}
@@ -1494,7 +1494,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 792.75, 187.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "s #0-grainBufferDuration"
+					"text" : "s #1-grainBufferDuration"
 				}
 
 			}
@@ -1507,7 +1507,7 @@
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
 					"patching_rect" : [ 720.0, 122.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "info~ #0-grainBuffer"
+					"text" : "info~ #1-grainBuffer"
 				}
 
 			}
@@ -1560,7 +1560,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 697.0, 82.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "buffer~ #0-grainBuffer"
+					"text" : "buffer~ #1-grainBuffer"
 				}
 
 			}
