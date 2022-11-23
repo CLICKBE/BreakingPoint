@@ -166,13 +166,14 @@
 			}
 , 			{
 				"box" : 				{
+					"comment" : "",
 					"id" : "obj-19",
-					"maxclass" : "newobj",
+					"index" : 0,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 621.0, 47.0, 22.0 ],
-					"style" : "",
-					"text" : "dac~ 1"
+					"patching_rect" : [ 169.0, 621.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
