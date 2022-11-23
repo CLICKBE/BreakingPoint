@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 208.0, 85.0, 1138.0, 696.0 ],
+		"rect" : [ 661.0, 85.0, 1138.0, 696.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,19 +38,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-50",
-					"linecount" : 5,
+					"id" : "obj-94",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 406.0, 128.0, 85.0 ],
+					"patching_rect" : [ 160.0, 21.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 214.75, 406.0, 470.0, 25.0 ],
+					"presentation_rect" : [ 126.0, 4.0, 68.0, 20.0 ],
 					"style" : "",
-					"text" : "Pour le HP de vibration (volume à 0 par défaut, à monter avec précaution !!!)"
+					"text" : "Granulator"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 39.0, 72.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "set #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 23.75, 33.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 226.0, 21.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 191.0, 4.0, 29.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
@@ -192,44 +227,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-76",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 429.0, 158.0, 205.0, 100.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 268.371429, 109.5, 454.0, 40.0 ],
-					"style" : "",
-					"text" : "Appui : juste une valeur | Appui+drag : créer une zone | shit+click : bouge la limite basse ou haute de la zone | Option+drag : déplace la zone entière"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-73",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 9.75, 338.0, 127.0, 70.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 331.628571, 151.0, 172.0, 55.0 ],
-					"style" : "",
-					"text" : "1 : pas de transposition\n< 1 : plus grave\n> 1 : plus aigu"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "candycane",
 					"id" : "obj-63",
 					"maxclass" : "attrui",
@@ -354,7 +351,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.0, 629.0, 189.0, 22.0 ],
 					"style" : "",
-					"text" : "read #1-breakingPoint.json 0"
+					"text" : "slotlist"
 				}
 
 			}
@@ -383,25 +380,6 @@
 					"presentation_rect" : [ 193.5, 96.0, 58.5, 20.0 ],
 					"style" : "",
 					"text" : "fixed/rnd"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-66",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 456.0, 477.0, 428.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 320.628571, 244.0, 293.0, 55.0 ],
-					"style" : "",
-					"text" : "Pour modifier un preset existant: trouver le réglage, entrer le numéro du preset dans la boîte chiffre \"Nb\" et appuyer sur le btn \"Save\""
 				}
 
 			}
@@ -444,60 +422,6 @@
 					"presentation_rect" : [ 234.0, 218.0, 81.5, 20.0 ],
 					"style" : "",
 					"text" : "Create preset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-37",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 532.0, 435.5, 250.0, 55.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 318.628571, 206.0, 319.0, 40.0 ],
-					"style" : "",
-					"text" : "Une fois que les réglages des paramètres sont ok, cliquer sur le bouton pour créer un nouveau preset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 3,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.0, 541.0, 71.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 207.628571, 319.0, 72.0, 25.0 ],
-					"style" : "",
-					"text" : "volume"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-8",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 53.0, 122.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 335.628571, 0.0, 122.0, 25.0 ],
-					"style" : "",
-					"text" : "Choisir le fichier"
 				}
 
 			}
@@ -789,7 +713,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u285013742"
+					"varname" : "u006013831"
 				}
 
 			}
@@ -2094,6 +2018,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-81", 0 ]
 				}
@@ -2124,6 +2055,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-87", 0 ]
 				}
 
 			}
